@@ -1,0 +1,14 @@
+dubbo:
+  application:
+    name: order-service-provider
+
+  registry:
+    address: zookeeper://192.168.13.115:2181
+  protocol:
+    name: dubbo
+    port: 20880
+  monitor:
+    protocol: registry
+
+server:
+  port: 8000
